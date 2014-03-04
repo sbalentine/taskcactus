@@ -12,6 +12,9 @@ gem 'faraday', '~> 0.9.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Use Bootstrap for templating
+gem 'bootstrap-sass', '~> 3.1.1'
+
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
@@ -20,9 +23,6 @@ gem 'jquery-rails', '~> 3.1.0'
 
 # Use Ember as the Javascript framework
 gem 'ember-rails', '~> 0.14.1'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.9'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '~> 2.4.0'
@@ -33,7 +33,20 @@ gem 'turbolinks', '~> 2.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0.3'
 
+group :production do
+
+  # Use Postgres as the production database for Active Record
+  gem 'pg', '~> 0.17.1'
+
+  # Use Heroku as deployment target
+  gem 'heroku', '~> 3.4.1'
+
+end
+
 group :development, :test do
+
+  # Use sqlite3 as the development database for Active Record
+  gem 'sqlite3', '~> 1.3.9'
 
   # Use pry for debugging
   gem 'pry', '~> 0.9.12.6'
