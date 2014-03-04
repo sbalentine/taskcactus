@@ -1,1 +1,1 @@
-BetterErrors.editor = :sublime if BetterErrors
+BetterErrors.editor = :sublime if BetterErrors.defined?
