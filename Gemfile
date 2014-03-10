@@ -36,6 +36,10 @@ gem 'turbolinks', '~> 2.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0.3'
 
+# Javascript Runtime
+gem 'execjs'
+gem 'therubyracer'
+
 group :production do
 
   # Use Postgres as the production database for Active Record
